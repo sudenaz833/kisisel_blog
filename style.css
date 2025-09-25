@@ -1,0 +1,115 @@
+
+/* Genel Ayarlar */
+body {
+    /* Mevcut stiller */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #1a1761;
+    font-size: 0.9rem;
+
+    /* Arka plan resmi ekleme */
+    background-image: url('arka_plan.jpg'); 
+    background-size: cover; /* Resmi sayfanın tamamına yayar */
+    background-position: center; /* Resmi ortalar */
+    background-attachment: fixed; /* Sayfa kaydırıldığında resmin sabit kalmasını sağlar */
+    background-repeat: no-repeat; /* Resmin tekrarlanmasını engeller */
+}
+
+/* Diğer mevcut stiller... */
+
+/* Navigasyon Çubuğu */
+.navbar {
+    background-image: url('navigation_bar.jpg'); 
+    background-size: cover; /* Resmi sayfanın tamamına yayar */
+    background-position: center; /* Resmi ortalar */
+    background-attachment: fixed; /* Sayfa kaydırıldığında resmin sabit kalmasını sağlar */
+    background-repeat: no-repeat; /* Resmin tekrarlanmasını engeller */
+
+ 
+    padding: 1.8rem 2rem;
+    display: flex; /* Öğeleri yan yana hizalamak için */
+    justify-content: flex-start;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin-right: 1.5rem;
+    transition: color 0.3s ease-in-out;
+    font-style: italic;
+}
+
+.navbar a:hover {
+    color: #3989df; /* Mavi renge geçiş */
+}
+
+/* Ana İçerik Bölümü */
+main {
+    max-width: 960px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    background-color: #cfe7ec;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2 {
+    color: #1a1a1a;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block; /* Çizginin sadece başlık kadar olmasını sağlar */
+    font-weight: 300;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Video Konteyneri */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Oranında Yükseklik */
+    height: 0;
+    margin-top: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer (Alt Bilgi) */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: 4rem;
+    border-top: 4px solid #007bff;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
